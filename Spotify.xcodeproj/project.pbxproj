@@ -10,9 +10,23 @@
 		204ACEB32BAFA39B00746075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACEB22BAFA39B00746075 /* AppDelegate.swift */; };
 		204ACEB52BAFA39B00746075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACEB42BAFA39B00746075 /* SceneDelegate.swift */; };
 		204ACEB72BAFA39B00746075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACEB62BAFA39B00746075 /* ViewController.swift */; };
-		204ACEBA2BAFA39B00746075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204ACEB82BAFA39B00746075 /* Main.storyboard */; };
 		204ACEBC2BAFA39E00746075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204ACEBB2BAFA39E00746075 /* Assets.xcassets */; };
 		204ACEBF2BAFA39E00746075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204ACEBD2BAFA39E00746075 /* LaunchScreen.storyboard */; };
+		204ACED82BAFA4AA00746075 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACED02BAFA4AA00746075 /* SignUpViewController.swift */; };
+		204ACED92BAFA4AA00746075 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204ACED12BAFA4AA00746075 /* SignUpViewController.xib */; };
+		204ACEDA2BAFA4AA00746075 /* PreLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204ACED32BAFA4AA00746075 /* PreLoginViewController.xib */; };
+		204ACEDB2BAFA4AA00746075 /* PreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACED42BAFA4AA00746075 /* PreLoginViewController.swift */; };
+		204ACEDC2BAFA4AA00746075 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204ACED62BAFA4AA00746075 /* LoginViewController.xib */; };
+		204ACEDD2BAFA4AA00746075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACED72BAFA4AA00746075 /* LoginViewController.swift */; };
+		204ACEEA2BAFA4F500746075 /* LibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204ACEDF2BAFA4F500746075 /* LibraryViewController.xib */; };
+		204ACEEB2BAFA4F500746075 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACEE02BAFA4F500746075 /* LibraryViewController.swift */; };
+		204ACEEC2BAFA4F500746075 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204ACEE22BAFA4F500746075 /* HomeViewController.xib */; };
+		204ACEED2BAFA4F500746075 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACEE32BAFA4F500746075 /* HomeViewController.swift */; };
+		204ACEEE2BAFA4F500746075 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACEE52BAFA4F500746075 /* SearchViewController.swift */; };
+		204ACEEF2BAFA4F500746075 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204ACEE62BAFA4F500746075 /* SearchViewController.xib */; };
+		204ACEF02BAFA4F500746075 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204ACEE82BAFA4F500746075 /* TabBarViewController.xib */; };
+		204ACEF12BAFA4F500746075 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACEE92BAFA4F500746075 /* TabBarViewController.swift */; };
+		204ACEF52BAFA51200746075 /* exenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204ACEF42BAFA51200746075 /* exenstions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +34,24 @@
 		204ACEB22BAFA39B00746075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		204ACEB42BAFA39B00746075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		204ACEB62BAFA39B00746075 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		204ACEB92BAFA39B00746075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		204ACEBB2BAFA39E00746075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		204ACEBE2BAFA39E00746075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		204ACEC02BAFA39E00746075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204ACED02BAFA4AA00746075 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		204ACED12BAFA4AA00746075 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		204ACED32BAFA4AA00746075 /* PreLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreLoginViewController.xib; sourceTree = "<group>"; };
+		204ACED42BAFA4AA00746075 /* PreLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreLoginViewController.swift; sourceTree = "<group>"; };
+		204ACED62BAFA4AA00746075 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		204ACED72BAFA4AA00746075 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		204ACEDF2BAFA4F500746075 /* LibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryViewController.xib; sourceTree = "<group>"; };
+		204ACEE02BAFA4F500746075 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		204ACEE22BAFA4F500746075 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		204ACEE32BAFA4F500746075 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		204ACEE52BAFA4F500746075 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		204ACEE62BAFA4F500746075 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		204ACEE82BAFA4F500746075 /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
+		204ACEE92BAFA4F500746075 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		204ACEF42BAFA51200746075 /* exenstions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exenstions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +87,106 @@
 				204ACEB22BAFA39B00746075 /* AppDelegate.swift */,
 				204ACEB42BAFA39B00746075 /* SceneDelegate.swift */,
 				204ACEB62BAFA39B00746075 /* ViewController.swift */,
-				204ACEB82BAFA39B00746075 /* Main.storyboard */,
 				204ACEBB2BAFA39E00746075 /* Assets.xcassets */,
 				204ACEBD2BAFA39E00746075 /* LaunchScreen.storyboard */,
 				204ACEC02BAFA39E00746075 /* Info.plist */,
+				204ACEF32BAFA51200746075 /* Resourses */,
+				204ACEF22BAFA50200746075 /* Presentation */,
 			);
 			path = Spotify;
+			sourceTree = "<group>";
+		};
+		204ACECE2BAFA4AA00746075 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				204ACECF2BAFA4AA00746075 /* SignUp */,
+				204ACED22BAFA4AA00746075 /* PreLogin */,
+				204ACED52BAFA4AA00746075 /* Login */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		204ACECF2BAFA4AA00746075 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				204ACED02BAFA4AA00746075 /* SignUpViewController.swift */,
+				204ACED12BAFA4AA00746075 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		204ACED22BAFA4AA00746075 /* PreLogin */ = {
+			isa = PBXGroup;
+			children = (
+				204ACED32BAFA4AA00746075 /* PreLoginViewController.xib */,
+				204ACED42BAFA4AA00746075 /* PreLoginViewController.swift */,
+			);
+			path = PreLogin;
+			sourceTree = "<group>";
+		};
+		204ACED52BAFA4AA00746075 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				204ACED62BAFA4AA00746075 /* LoginViewController.xib */,
+				204ACED72BAFA4AA00746075 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		204ACEDE2BAFA4F500746075 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				204ACEDF2BAFA4F500746075 /* LibraryViewController.xib */,
+				204ACEE02BAFA4F500746075 /* LibraryViewController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		204ACEE12BAFA4F500746075 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				204ACEE22BAFA4F500746075 /* HomeViewController.xib */,
+				204ACEE32BAFA4F500746075 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		204ACEE42BAFA4F500746075 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				204ACEE52BAFA4F500746075 /* SearchViewController.swift */,
+				204ACEE62BAFA4F500746075 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		204ACEE72BAFA4F500746075 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				204ACEE82BAFA4F500746075 /* TabBarViewController.xib */,
+				204ACEE92BAFA4F500746075 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		204ACEF22BAFA50200746075 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				204ACEE12BAFA4F500746075 /* Home */,
+				204ACEDE2BAFA4F500746075 /* Library */,
+				204ACEE42BAFA4F500746075 /* Search */,
+				204ACEE72BAFA4F500746075 /* TabBar */,
+				204ACECE2BAFA4AA00746075 /* Registration */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		204ACEF32BAFA51200746075 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				204ACEF42BAFA51200746075 /* exenstions.swift */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +247,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204ACEF02BAFA4F500746075 /* TabBarViewController.xib in Resources */,
 				204ACEBF2BAFA39E00746075 /* LaunchScreen.storyboard in Resources */,
+				204ACEDC2BAFA4AA00746075 /* LoginViewController.xib in Resources */,
+				204ACEEA2BAFA4F500746075 /* LibraryViewController.xib in Resources */,
+				204ACEDA2BAFA4AA00746075 /* PreLoginViewController.xib in Resources */,
+				204ACEEF2BAFA4F500746075 /* SearchViewController.xib in Resources */,
+				204ACED92BAFA4AA00746075 /* SignUpViewController.xib in Resources */,
 				204ACEBC2BAFA39E00746075 /* Assets.xcassets in Resources */,
-				204ACEBA2BAFA39B00746075 /* Main.storyboard in Resources */,
+				204ACEEC2BAFA4F500746075 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +266,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204ACEEE2BAFA4F500746075 /* SearchViewController.swift in Sources */,
+				204ACEDD2BAFA4AA00746075 /* LoginViewController.swift in Sources */,
+				204ACEF12BAFA4F500746075 /* TabBarViewController.swift in Sources */,
+				204ACEDB2BAFA4AA00746075 /* PreLoginViewController.swift in Sources */,
+				204ACEEB2BAFA4F500746075 /* LibraryViewController.swift in Sources */,
 				204ACEB72BAFA39B00746075 /* ViewController.swift in Sources */,
+				204ACEED2BAFA4F500746075 /* HomeViewController.swift in Sources */,
 				204ACEB32BAFA39B00746075 /* AppDelegate.swift in Sources */,
 				204ACEB52BAFA39B00746075 /* SceneDelegate.swift in Sources */,
+				204ACEF52BAFA51200746075 /* exenstions.swift in Sources */,
+				204ACED82BAFA4AA00746075 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		204ACEB82BAFA39B00746075 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				204ACEB92BAFA39B00746075 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		204ACEBD2BAFA39E00746075 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +425,6 @@
 				INFOPLIST_FILE = Spotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +452,6 @@
 				INFOPLIST_FILE = Spotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
