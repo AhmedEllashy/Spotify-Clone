@@ -24,9 +24,15 @@ class TabBarViewController: UITabBarController {
     }
     
     private func createNav(with title : String ,and image : UIImage?,vc : UIViewController) ->UINavigationController {
+        tabBar.barStyle = .black
         let nav = UINavigationController(rootViewController: vc)
         nav.tabBarItem.title = title
         nav.tabBarItem.image = image
+//        UITabBar.appearance().tintColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1)
+//        UITabBar.appearance().backgroundColor = UIColor.gray.withAlphaComponent(0.1)
+
+//        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
+
         return nav
     }
 
