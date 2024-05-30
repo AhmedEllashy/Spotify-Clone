@@ -8,15 +8,14 @@
 import Foundation
 
 struct Album : Codable{
-    let album_type : String
-    let available_markets : [String]
-    let artists : [Artist]
-    let id : String
-    let images : [ImageResponse]
-    let name : String
-    let release_date : String
-    let total_tracks : Int
-    let tracks : [RecommendationsResponse]?
+    let album_type : String?
+    let available_markets : [String]?
+    let artists : [Artist]?
+    let id : String?
+    let images : [ImageResponse]?
+    let name : String?
+    let release_date : String?
+    let total_tracks : Int?
 }
 
 struct AlbumDetails : Codable{

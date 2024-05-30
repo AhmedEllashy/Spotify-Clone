@@ -45,6 +45,7 @@ class PlaylistViewController: UIViewController {
         PlaylistDetailsViewModel.shared.delegate = self
         configCollectionView()
         
+        
     }
     private func addShareNavBarButton(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -162,6 +163,7 @@ extension PlaylistViewController : UICollectionViewDelegate , UICollectionViewDa
             if let details = PlaylistDetailsViewModel.shared.playlistDetails{
                 cell.config(details)
             }
+            cell.delegate = self
             return cell
         case 1 :
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendtionsCollectionViewCell.cellIdentifier, for: indexPath) as! RecommendtionsCollectionViewCell
@@ -178,6 +180,15 @@ extension PlaylistViewController : UICollectionViewDelegate , UICollectionViewDa
         }
         
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            guard let track = viewModel.playlistDetails?.tracks?.items[indexPath.row].track else{
+                return
+            }
+            PlayerViewModel.shared.playTrack(track: track, vc: self)
+
+        }
+    }
     
     
 }
@@ -190,6 +201,20 @@ extension PlaylistViewController : PlaylistDetailsViewDelegate {
     
     func errorOccured(error: String) {
         Utilities.errorALert(title: "Oops", message: error, actionTitle: nil, action: {}, vc: self)
+    }
+    
+    
+}
+
+extension PlaylistViewController : HeaderSectionCollectionViewCellDelegate{
+    func didTapPlayAllCollectionViewCellDelegate() {
+        guard let tracks = viewModel.playlistDetails?.tracks?.items.compactMap({ item in
+            return Track(album: item.track.album, artists: item.track.artists, availableMarkets: item.track.availableMarkets, discNumber: item.track.discNumber, durationMs: item.track.durationMs, explicit: item.track.explicit, name: item.track.name, previewUrl: item.track.previewUrl)
+        }) else {
+            Utilities.errorALert(title: "Oops", message: "No Tracks To pLAY", actionTitle: nil, action: {}, vc: self)
+            return
+        }
+        PlayerViewModel.shared.playTrack(tracks: tracks, vc: self)
     }
     
     

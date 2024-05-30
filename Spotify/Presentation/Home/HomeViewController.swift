@@ -94,13 +94,9 @@ extension HomeViewController : UICollectionViewDataSource , UICollectionViewDele
             vc.modalPresentationStyle = .fullScreen
             navigationController?.navigationBar.prefersLargeTitles = false
             navigationController?.pushViewController(vc, animated: true)
-//        case .tracks(let model) :
-//            let vc = AlbumViewController()
-//            vc.modalPresentationStyle = .fullScreen
-//            navigationController?.pushViewController(vc, animated: true)
-        default :
-            break
-            
+        case .tracks(let model) :
+            let track = model[indexPath.row]
+            PlayerViewModel.shared.playTrack(track: track, vc: self)
         }
     }
 
@@ -118,12 +114,10 @@ extension HomeViewController : UICollectionViewDataSource , UICollectionViewDele
         case .featuredPlaylists(let model) :
             let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: FeaturedPlaylistsCollectionViewCell.cellIdentifier, for: indexPath) as! FeaturedPlaylistsCollectionViewCell
             cell.config(model[indexPath.row])
-            cell.backgroundColor = .systemCyan
             return cell
             ///
         case .tracks(let model) :
             let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: RecommendtionsCollectionViewCell.cellIdentifier, for: indexPath) as! RecommendtionsCollectionViewCell
-            cell.backgroundColor = .systemRed
             cell.config(model[indexPath.row])
             return cell
         }

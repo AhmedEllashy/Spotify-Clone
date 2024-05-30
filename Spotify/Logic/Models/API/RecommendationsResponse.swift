@@ -19,12 +19,15 @@ struct Track : Codable {
     let discNumber , durationMs : Int
     let explicit : Bool
     let name : String
+    let previewUrl : String?
+//    let images : [ImageResponse]?
     
     enum CodingKeys : String , CodingKey {
         case album , artists
         case availableMarkets = "available_markets"
         case discNumber  = "disc_number"
         case durationMs = "duration_ms"
+        case previewUrl = "preview_url"
         case explicit ,name
         
         

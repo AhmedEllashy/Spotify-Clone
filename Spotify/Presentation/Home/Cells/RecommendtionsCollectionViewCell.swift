@@ -57,7 +57,7 @@ class RecommendtionsCollectionViewCell: UICollectionViewCell {
     func config(_ model : Track?){
         if  model?.album != nil {
             trackImageView.sd_setImage(
-                with: URL(string: model?.album?.images[0].url ?? ""),
+                with: URL(string: model?.album?.images?[0].url ?? ""),
                 completed: nil
             )
         }else{

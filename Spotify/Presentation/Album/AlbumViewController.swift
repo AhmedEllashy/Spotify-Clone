@@ -43,7 +43,7 @@ class AlbumViewController: UIViewController {
 //MARK: - Functions
     private func setup(){
         self.title = album.name
-        viewModel.getAlbum(id: album.id)
+        viewModel.getAlbum(id: album.id ?? "")
         viewModel.delegate = self
         configCollectionView()
     }
@@ -147,7 +147,15 @@ extension AlbumViewController : UICollectionViewDelegate , UICollectionViewDataS
             return cell
         }
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            guard let track = viewModel.album?.tracks.items[indexPath.row] else{
+                return
+            }
+            PlayerViewModel.shared.playTrack(track: track, vc: self)
+            
+        }
+    }
     
 }
 

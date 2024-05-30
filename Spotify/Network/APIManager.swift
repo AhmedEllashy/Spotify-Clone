@@ -127,7 +127,52 @@ class APIManager{
             task.resume()
         }
     }
-    //MARK: - Album APIS
+    //MARK: - Category
+    public func getCategories(completion : @escaping (Result<[CategoryItemResponse],Error>) -> Void){
+        guard let url = URL(string: AppConstants.baseURL + "/browse/categories") else{
+            completion(.failure(ApiErrors.faildParseURL))
+            return
+        }
+        createRequest(url: url, type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data , error == nil else {
+                    completion(.failure(error!))
+                    return
+                }
+                do {
+                    let result = try JSONDecoder().decode(CategoryResponse.self, from: data)
+                    completion(.success(result.categories.items))
+                }catch{
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
+    public func getCategoryPlaylist(id : String ,completion : @escaping (Result<FeaturedPlaylistResponse,Error>) -> Void){
+        guard let url = URL(string: AppConstants.baseURL + "/browse/categories/\(id)/playlists") else{
+            completion(.failure(ApiErrors.faildParseURL))
+            return
+        }
+        createRequest(url: url, type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data , error == nil else {
+                    completion(.failure(error!))
+                    return
+                }
+                do {
+                    let result = try JSONDecoder().decode(FeaturedPlaylistResponse.self, from: data)
+                    completion(.success(result))
+                }catch{
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
+    //MARK: - Album
     public func getAlbumDetails(id : String , completion : @escaping (Result<AlbumDetails,Error>)-> Void){
         guard let url = URL(string: AppConstants.baseURL + "/albums/\(id)")else{
             completion(.failure(ApiErrors.somethingWentWrong))
@@ -152,8 +197,56 @@ class APIManager{
             task.resume()
         }
     }
-    //MARK: - Playlist APIS
+    //MARK: - Search
+    public func search(query : String, completion : @escaping(Result<SearchResponse,Error>)-> Void){
+        guard let url = URL(string: AppConstants.baseURL + "/search?q=\(query)&type=album%2Cplaylist%2Ctrack%2Cartist") else{
+            completion(.failure(ApiErrors.faildParseURL))
+            return
+        }
+        createRequest(url: url, type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data , error == nil else{
+                    completion(.failure(ApiErrors.somethingWentWrong))
+                    print(error?.localizedDescription ?? "")
+                    return
+                }
+                do{
+                    let result = try JSONDecoder().decode(SearchResponse.self, from: data)
+                    completion(.success(result))
+                }catch{
+                    completion(.failure(error))
+                }
+                
+            }
+            task.resume()
+        }
+    }
+    public func searchTest(query : String, completion : @escaping(Result<SearchResponseTest,Error>)-> Void){
+        guard let url = URL(string: AppConstants.baseURL + "/search?q=\(query)&type=album%2Cplaylist%2Ctrack%2Cartist") else{
+            completion(.failure(ApiErrors.faildParseURL))
+            return
+        }
+        createRequest(url: url, type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data , error == nil else{
+                    completion(.failure(ApiErrors.somethingWentWrong))
+                    print(error?.localizedDescription ?? "")
+                    return
+                }
+                do{
+                    let result = try JSONDecoder().decode(SearchResponseTest.self, from: data)
+                    completion(.success(result))
+                    print(result)
+                }catch{
+                    completion(.failure(error))
+                }
+                
+            }
+            task.resume()
+        }
+    }
 
+    //MARK: - Playlist
     public func getPlayistDetailsAPI(id : String , completion : @escaping (Result<PlaylistDetailsResponse,Error>) -> Void){
         guard let url = URL(string: AppConstants.baseURL + "/playlists/\(id)") else{
             completion(.failure(ApiErrors.faildParseURL))

@@ -7,14 +7,18 @@
 
 import UIKit
 import SDWebImage
-
+protocol HeaderSectionCollectionViewCellDelegate : AnyObject {
+    func didTapPlayAllCollectionViewCellDelegate()
+}
 class HeaderSectionCollectionViewCell: UICollectionViewCell {
     //MARK: - Properties
     static let cellIdentifier = "HeaderSectionCollectionViewCell"
+    weak var delegate : HeaderSectionCollectionViewCellDelegate?
     //MARK: - UIViews
     private var playlistImageView : UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "photo")
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     private var playlistNameLabel : UILabel = {
@@ -49,6 +53,7 @@ class HeaderSectionCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(playlistDescriptionLabel)
         contentView.addSubview(playlistOwnerLabel)
         contentView.addSubview(playAllButton)
+        playAllButton.addTarget(self, action: #selector(didTapPlayAll), for: .touchUpInside)
     }
     required init?(coder: NSCoder) {
         fatalError()
@@ -73,7 +78,7 @@ class HeaderSectionCollectionViewCell: UICollectionViewCell {
         playlistOwnerLabel.text = model.owner.display_name
     }
     private func configUIViews(){
-        playlistImageView.frame = CGRect(x: 0, y: contentView.top + 20 , width: contentView.width / 2, height: contentView.width / 2)
+        playlistImageView.frame = CGRect(x: 0, y: contentView.safeAreaInsets.top + 20 , width: contentView.width , height: contentView.width / 2)
         playlistNameLabel.frame = CGRect(x: 8, y: playlistImageView.bottom + 10, width: contentView.width - 40, height: 30)
         playlistDescriptionLabel.frame = CGRect(x: 8, y: playlistNameLabel.bottom + 10, width: contentView.width - 40, height: 30)
         playlistOwnerLabel.frame = CGRect(x: 8, y: playlistDescriptionLabel.bottom + 10, width: contentView.width - 40, height: 30)
@@ -81,6 +86,8 @@ class HeaderSectionCollectionViewCell: UICollectionViewCell {
         playAllButton.frame = CGRect(x: contentView.right - 60 , y: height - 60, width: 50, height: 50)
     }
 
-
+    @objc func didTapPlayAll(){
+        self.delegate?.didTapPlayAllCollectionViewCellDelegate()
+    }
     
 }

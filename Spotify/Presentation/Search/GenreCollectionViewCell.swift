@@ -58,8 +58,9 @@ class GenreCollectionViewCell: UICollectionViewCell {
         genraNameLabel.text = nil
     }
     //MARK: - Functions
-     func config(with title : String){
-        genraNameLabel.text = title
+    func config(with category : CategoryItemResponse){
+        imageView.sd_setImage(with: URL(string: category.icons.first?.url ?? ""), completed: nil)
+        genraNameLabel.text = category.name
         contentView.backgroundColor = colors.randomElement()
     }
     private func configSubViews(){
