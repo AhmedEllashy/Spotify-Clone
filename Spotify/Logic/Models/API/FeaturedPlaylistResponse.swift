@@ -14,5 +14,16 @@ struct FeaturedPlaylistResponse : Codable{
 struct PlaylistsResponse : Codable{
     let items : [Playlist]
 }
+struct PlaylistsResponseCus : Codable{
+    let items : [PlaylistCus]
+}
 
+struct PlaylistCus :Codable{
+    let description : String
+    let external_urls : [String : String]
+    let id : String
+    let images : [ImageResponse]?
+    let name : String?
+    let owner : Owner
+}
 

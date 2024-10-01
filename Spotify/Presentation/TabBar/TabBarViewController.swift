@@ -12,13 +12,12 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTabs()
-        print("Ahmad Ellashy!!")
     }
 
     private func setupTabs(){
         let homeView = self.createNav(with: "Home", and: UIImage(systemName: "house"), vc: HomeViewController())
-        let searchView = self.createNav(with: "Search", and: UIImage(systemName: "clock"), vc: SearchViewController())
-        let libraryView = self.createNav(with: "Home", and: UIImage(systemName: "cloud.snow"), vc: LibraryViewController())
+        let searchView = self.createNav(with: "Search", and: UIImage(systemName: "magnifyingglass"), vc: SearchViewController())
+        let libraryView = self.createNav(with: "Home", and: UIImage(systemName: "music.note.list"), vc: LibraryViewController())
 
         self.setViewControllers([homeView,searchView,libraryView], animated: true)
     }

@@ -9,9 +9,14 @@ import UIKit
 
 class PlaylistViewController: UIViewController {
     //MARK: - Properties
-   private let playlist : Playlist
+    private let playlist : Playlist
     private let viewModel = PlaylistDetailsViewModel.shared
-
+    private var observer : NSObjectProtocol?
+    private var errorLabel : UILabel = {
+        let label = UILabel()
+        return label
+    }()
+     var isOwner : Bool = false
     //MARK: - UIViews
     private var playlistCollectionView : UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewCompositionalLayout(sectionProvider: { sectionIndex, _ in
@@ -36,16 +41,47 @@ class PlaylistViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         playlistCollectionView.frame = view.bounds
+        errorLabel.center = view.center
     }
     //MARK: - Functions
     private func setup (){
         title = playlist.name
         addShareNavBarButton()
+        view.addSubview(errorLabel)
+        errorLabel.isHidden = true
         PlaylistDetailsViewModel.shared.getPlaylist(id: playlist.id)
         PlaylistDetailsViewModel.shared.delegate = self
         configCollectionView()
+        isOwner ? configIfIsOwner() : nil
         
         
+    }
+    private func configIfIsOwner(){
+        let gesture = UILongPressGestureRecognizer(target: self, action: #selector(didTapLongPress(_:)))
+        playlistCollectionView.addGestureRecognizer(gesture)
+
+    }
+    @objc func didTapLongPress(_ gesture : UILongPressGestureRecognizer){
+        guard  gesture.state == .began else{
+            return
+        }
+        let touchPoint = gesture.location(in: playlistCollectionView)
+        guard let index = playlistCollectionView.indexPathForItem(at: touchPoint), index.section == 1 else{
+            return
+        }
+        guard let track = viewModel.playlistDetails?.tracks?.items[index.row].track else{
+            return
+        }
+        let actionSheet = UIAlertController(title: track.name, message: "Are you want add this to a playlist?", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Delete", style: .default, handler: { action in
+            LibraryViewModel.shared.deleteTrackFromPlaylist(playlist: self.playlist, track: track, vc: self)
+            if self.viewModel.tracks.count >= 1 {
+                self.viewModel.tracks.removeAll()
+            }
+//            self.playlistCollectionView.reloadData()
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(actionSheet,animated: true)
     }
     private func addShareNavBarButton(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -167,7 +203,10 @@ extension PlaylistViewController : UICollectionViewDelegate , UICollectionViewDa
             return cell
         case 1 :
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendtionsCollectionViewCell.cellIdentifier, for: indexPath) as! RecommendtionsCollectionViewCell
-            cell.config(PlaylistDetailsViewModel.shared.playlistDetails?.tracks?.items[indexPath.row].track)
+            print(viewModel.tracks.count)
+            if viewModel.tracks.count >= 1 {
+                cell.config(viewModel.tracks[indexPath.row].track)
+            }
             return cell
         default :
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeaderSectionCollectionViewCell.cellIdentifier, for: indexPath) as! HeaderSectionCollectionViewCell
@@ -196,11 +235,15 @@ extension PlaylistViewController : UICollectionViewDelegate , UICollectionViewDa
 //MARK: - View Model Delegate Methods
 extension PlaylistViewController : PlaylistDetailsViewDelegate {
     func updateUIViews() {
+        playlistCollectionView.isHidden = false
+        errorLabel.isHidden = true
         self.playlistCollectionView.reloadData()
     }
     
     func errorOccured(error: String) {
-        Utilities.errorALert(title: "Oops", message: error, actionTitle: nil, action: {}, vc: self)
+        playlistCollectionView.isHidden = true
+        errorLabel.isHidden = false
+        Utilities.errorALert(message: error, actionTitle: nil, action: {}, vc: self)
     }
     
     
@@ -208,10 +251,8 @@ extension PlaylistViewController : PlaylistDetailsViewDelegate {
 
 extension PlaylistViewController : HeaderSectionCollectionViewCellDelegate{
     func didTapPlayAllCollectionViewCellDelegate() {
-        guard let tracks = viewModel.playlistDetails?.tracks?.items.compactMap({ item in
-            return Track(album: item.track.album, artists: item.track.artists, availableMarkets: item.track.availableMarkets, discNumber: item.track.discNumber, durationMs: item.track.durationMs, explicit: item.track.explicit, name: item.track.name, previewUrl: item.track.previewUrl)
-        }) else {
-            Utilities.errorALert(title: "Oops", message: "No Tracks To pLAY", actionTitle: nil, action: {}, vc: self)
+        guard let tracks = viewModel.playlistDetails?.tracks?.items.compactMap({$0.track}) else {
+            Utilities.errorALert(message: "No Tracks To Play", actionTitle: nil, action: {}, vc: self)
             return
         }
         PlayerViewModel.shared.playTrack(tracks: tracks, vc: self)

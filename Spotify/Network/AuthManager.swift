@@ -118,6 +118,15 @@ class AuthManager {
         task.resume()
     }
     
+    public func signOut(){
+        let userDefaults = UserDefaults.standard
+        userDefaults.setValue(nil, forKey: "access_token")
+        userDefaults.setValue(nil, forKey: "expire_date")
+        userDefaults.setValue(nil, forKey: "refresh_token")
+    }
+    
+    
+    
     private func createRequest(url : URL,basicToken : String,query2 : String, query2Value : String,query3 : String, query3Value : String, grantTypeValue : String ) -> URLRequest{
         var component = URLComponents()
         component.queryItems = [

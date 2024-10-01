@@ -34,98 +34,6 @@
             endingLineNumber = "53"
             landmarkName = "getToken(code:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0643377E-F8B5-4ED9-BD8C-70D4E82E65CB - a5ff91c427435eaa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthManager.getToken(code: Swift.String, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "3061">
-               </Location>
-               <Location
-                  uuid = "0643377E-F8B5-4ED9-BD8C-70D4E82E65CB - a098f0174f569de0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.getToken(code: Swift.String, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "227">
-               </Location>
-               <Location
-                  uuid = "0643377E-F8B5-4ED9-BD8C-70D4E82E65CB - a098f0174f569dc3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.getToken(code: Swift.String, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "227">
-               </Location>
-               <Location
-                  uuid = "0643377E-F8B5-4ED9-BD8C-70D4E82E65CB - a098f0174f569dc3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.getToken(code: Swift.String, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "345">
-               </Location>
-               <Location
-                  uuid = "0643377E-F8B5-4ED9-BD8C-70D4E82E65CB - a098f0174f569dc3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.getToken(code: Swift.String, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "233">
-               </Location>
-               <Location
-                  uuid = "0643377E-F8B5-4ED9-BD8C-70D4E82E65CB - a098f0174f569dc3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.getToken(code: Swift.String, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "351">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,53 +50,6 @@
             endingLineNumber = "32"
             landmarkName = "webView(_:didStartProvisionalNavigation:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5357ED43-C5EC-4F39-A2E4-A69789154EBA - fec2e0d3141ff02a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthViewController.webView(_: __C.WKWebView, didStartProvisionalNavigation: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "422">
-               </Location>
-               <Location
-                  uuid = "5357ED43-C5EC-4F39-A2E4-A69789154EBA - fec2e0d3141ff02a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthViewController.webView(_: __C.WKWebView, didStartProvisionalNavigation: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "495">
-               </Location>
-               <Location
-                  uuid = "5357ED43-C5EC-4F39-A2E4-A69789154EBA - fec2e0d3141ff02a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthViewController.webView(_: __C.WKWebView, didStartProvisionalNavigation: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "492">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -205,83 +66,6 @@
             endingLineNumber = "33"
             landmarkName = "webView(_:didStartProvisionalNavigation:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B43E803D-58F6-4D88-B4BF-174DF8AACB54 - fec2e0d3141ff009"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthViewController.webView(_: __C.WKWebView, didStartProvisionalNavigation: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "799">
-               </Location>
-               <Location
-                  uuid = "B43E803D-58F6-4D88-B4BF-174DF8AACB54 - fec2e0d3141ff009"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthViewController.webView(_: __C.WKWebView, didStartProvisionalNavigation: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "777">
-               </Location>
-               <Location
-                  uuid = "B43E803D-58F6-4D88-B4BF-174DF8AACB54 - 2a13f3d9ca201ee"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.URLQueryItem) -&gt; Swift.Bool in Spotify.AuthViewController.webView(_: __C.WKWebView, didStartProvisionalNavigation: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "B43E803D-58F6-4D88-B4BF-174DF8AACB54 - fec2e0d3141ff009"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthViewController.webView(_: __C.WKWebView, didStartProvisionalNavigation: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "762">
-               </Location>
-               <Location
-                  uuid = "B43E803D-58F6-4D88-B4BF-174DF8AACB54 - fec2e0d3141ff009"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthViewController.webView(_: __C.WKWebView, didStartProvisionalNavigation: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "643">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -298,38 +82,6 @@
             endingLineNumber = "40"
             landmarkName = "getToken(code:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8FC92510-4A6D-4100-897E-8E5D399C203F - a5ff91c427435cda"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthManager.getToken(code: Swift.String, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "509">
-               </Location>
-               <Location
-                  uuid = "8FC92510-4A6D-4100-897E-8E5D399C203F - a5ff91c427435cda"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthManager.getToken(code: Swift.String, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "411">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -342,42 +94,10 @@
             filePath = "Spotify/Network/APIManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "281"
-            endingLineNumber = "281"
+            startingLineNumber = "463"
+            endingLineNumber = "463"
             landmarkName = "createRequest(url:type:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A6138B74-0DD0-4E95-852B-F24A35A8086A - 6704c6251d2efe37"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.APIManager.createRequest(url: Swift.Optional&lt;Foundation.URL&gt;, type: Spotify.HttpMethods, completion: (Foundation.URLRequest) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "289">
-               </Location>
-               <Location
-                  uuid = "A6138B74-0DD0-4E95-852B-F24A35A8086A - 702ae0cc8f7a9c6b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; () in Spotify.APIManager.createRequest(url: Swift.Optional&lt;Foundation.URL&gt;, type: Spotify.HttpMethods, completion: (Foundation.URLRequest) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "384">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -410,38 +130,6 @@
             endingLineNumber = "83"
             landmarkName = "refreshToken(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "41FF990C-5B0E-4A68-8D12-E2FA9C85ABA0 - 5c963cc3ddb9444a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "375">
-               </Location>
-               <Location
-                  uuid = "41FF990C-5B0E-4A68-8D12-E2FA9C85ABA0 - 5c963cc3ddb9444a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "379">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -458,38 +146,6 @@
             endingLineNumber = "31"
             landmarkName = "getUserProfile(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CAD8AD8D-8806-4699-8947-167B360D837B - 4e6ff835de3a4554"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "622">
-               </Location>
-               <Location
-                  uuid = "CAD8AD8D-8806-4699-8947-167B360D837B - 61157dbd1b6e97ac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "1710">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -506,38 +162,6 @@
             endingLineNumber = "20"
             landmarkName = "getUserProfile(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B73A5936-F04D-4C50-8506-A75681EE5F05 - 4e6ff835de3a5ac8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "145">
-               </Location>
-               <Location
-                  uuid = "B73A5936-F04D-4C50-8506-A75681EE5F05 - 61157dbd1b6e8838"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "253">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -554,38 +178,6 @@
             endingLineNumber = "22"
             landmarkName = "getUserProfile(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3B3C9C8A-6832-4D11-9F72-EC7E69ACE68E - 61157dbd1b6e8859"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "2739">
-               </Location>
-               <Location
-                  uuid = "3B3C9C8A-6832-4D11-9F72-EC7E69ACE68E - 61157dbd1b6e8859"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "2807">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -602,53 +194,6 @@
             endingLineNumber = "23"
             landmarkName = "getUserProfile(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "09679FA8-7AC1-4517-9F79-24983CB369DE - 61157dbd1b6e887a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "2300">
-               </Location>
-               <Location
-                  uuid = "09679FA8-7AC1-4517-9F79-24983CB369DE - 61157dbd1b6e887a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "2730">
-               </Location>
-               <Location
-                  uuid = "09679FA8-7AC1-4517-9F79-24983CB369DE - 61157dbd1b6e887a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "2374">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -661,8 +206,8 @@
             filePath = "Spotify/Network/APIManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
+            startingLineNumber = "472"
+            endingLineNumber = "472"
             landmarkName = "createRequest(url:type:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -681,38 +226,6 @@
             endingLineNumber = "21"
             landmarkName = "getUserProfile(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CEBDACB3-1618-4CDF-8084-931EB3F6E32A - 61157dbd1b6e8859"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "217">
-               </Location>
-               <Location
-                  uuid = "CEBDACB3-1618-4CDF-8084-931EB3F6E32A - 61157dbd1b6e8859"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "335">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -729,38 +242,6 @@
             endingLineNumber = "94"
             landmarkName = "refreshToken(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0239CDC0-0498-4C15-8A74-30AF7C061D33 - 5c963cc3ddb95adf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "468">
-               </Location>
-               <Location
-                  uuid = "0239CDC0-0498-4C15-8A74-30AF7C061D33 - 5c963cc3ddb95a5b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "468">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -777,98 +258,6 @@
             endingLineNumber = "105"
             landmarkName = "refreshToken(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F7420013-9D40-47C2-ABD1-20AEC149D4BA - 74eebefdf8d4cbf7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "230">
-               </Location>
-               <Location
-                  uuid = "F7420013-9D40-47C2-ABD1-20AEC149D4BA - 74eebefdf8d4cbf7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "354">
-               </Location>
-               <Location
-                  uuid = "F7420013-9D40-47C2-ABD1-20AEC149D4BA - 74eebefdf8d4cbf7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "253">
-               </Location>
-               <Location
-                  uuid = "F7420013-9D40-47C2-ABD1-20AEC149D4BA - 74eebefdf8d4cbf7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "371">
-               </Location>
-               <Location
-                  uuid = "F7420013-9D40-47C2-ABD1-20AEC149D4BA - 74eebefdf8d4cb7b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "253">
-               </Location>
-               <Location
-                  uuid = "F7420013-9D40-47C2-ABD1-20AEC149D4BA - 74eebefdf8d4cb7b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "371">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -917,53 +306,6 @@
             endingLineNumber = "104"
             landmarkName = "refreshToken(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EB9CA986-BD1D-4D9E-BFE1-A826D5D36C88 - 5c963cc3ddb95b0d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "1806">
-               </Location>
-               <Location
-                  uuid = "EB9CA986-BD1D-4D9E-BFE1-A826D5D36C88 - 74eebefdf8d4cb7b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "253">
-               </Location>
-               <Location
-                  uuid = "EB9CA986-BD1D-4D9E-BFE1-A826D5D36C88 - 74eebefdf8d4cb7b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Spotify.AuthManager.refreshToken(completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/AuthManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "230">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1012,38 +354,6 @@
             endingLineNumber = "19"
             landmarkName = "getUserProfile(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "25BE41B4-B69F-487C-AF90-CDEC3A7685A3 - a55fbad640086ead"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "571">
-               </Location>
-               <Location
-                  uuid = "25BE41B4-B69F-487C-AF90-CDEC3A7685A3 - 4e6ff835de3a5ac8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.URLRequest) -&gt; () in Spotify.APIManager.getUserProfile(completion: (Swift.Result&lt;Spotify.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Network/APIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "145">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1092,38 +402,6 @@
             endingLineNumber = "67"
             landmarkName = "updateUI()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F6CE89B7-76AD-4E68-B068-1EF044CDB900 - 75b2de130b88f861"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.ProfileViewController.updateUI() -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/Profile/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "2705">
-               </Location>
-               <Location
-                  uuid = "F6CE89B7-76AD-4E68-B068-1EF044CDB900 - 75b2de130b88f861"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.ProfileViewController.updateUI() -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/Profile/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "164">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1140,38 +418,6 @@
             endingLineNumber = "70"
             landmarkName = "updateUI()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "970CF22B-AF02-4A04-A77E-1A1AE2E570B7 - 75b2de130b88f8c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.ProfileViewController.updateUI() -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/Profile/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "818">
-               </Location>
-               <Location
-                  uuid = "970CF22B-AF02-4A04-A77E-1A1AE2E570B7 - 75b2de130b88f8c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Spotify.ProfileViewController.updateUI() -&gt; ()"
-                  moduleName = "Spotify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadellashy/Documents/Projects/Spotify/Spotify/Presentation/Profile/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "274">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

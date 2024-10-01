@@ -34,3 +34,10 @@ struct TrackResponse : Codable {
     let items : [Track]
 }
 
+struct UserAlbumResponse : Codable {
+    let items : [UserAlbum]
+}
+struct UserAlbum : Codable {
+    let added_at : String
+    let album : Album
+}

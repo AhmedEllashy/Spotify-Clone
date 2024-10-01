@@ -77,7 +77,7 @@ class ProfileViewController: UIViewController , ProfileViewModelDelegate {
     }
     
     func errorOccured(error: String) {
-        Utilities.errorALert(title: "Oops", message:error , actionTitle: "Ok", action: {}, vc: self)
+        Utilities.errorALert(message:error , actionTitle: "Ok", action: {}, vc: self)
         tableView.isHidden = true
         label.text = error
         label.center = view.center

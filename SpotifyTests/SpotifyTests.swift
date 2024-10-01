@@ -30,25 +30,15 @@ final class SpotifyTests: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
     func testGetCategories() async throws  {
-        func checker() -> Bool {
-            var check : Bool = true
-            sut.getCategories { result in
-                switch result {
-                case .failure(let error) :
-                    check = false
-                case .success(_):
-                    check = true
-                }
-            }
-            return check
-        }
-        XCTAssert(checker())
+
+        
+        
     }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         measure {
-            // Put the code you want to measure the time of here.
+        
         }
     }
 

@@ -71,10 +71,10 @@ class RecommendtionsCollectionViewCell: UICollectionViewCell {
         if hasImage {
             trackImageView.frame = CGRect(x: 0, y: 0, width: contentView.height, height: contentView.height)
             trackNameLabel.frame = CGRect(x: trackImageView.right + 10, y: contentView.top , width: contentView.width - 200, height: 30)
-            artistNameLabel.frame = CGRect(x: trackImageView.right + 10, y: trackNameLabel.bottom , width: contentView.width - 10, height: 20)
+            artistNameLabel.frame = CGRect(x: trackImageView.right + 10, y: trackNameLabel.bottom + 10, width: contentView.width - 10, height: 20)
         }else{
-            trackNameLabel.frame = CGRect(x: 10, y: contentView.top , width: contentView.width - 200, height: 30)
-            artistNameLabel.frame = CGRect(x: 10, y: contentView.bottom - 30 , width: contentView.width - 10, height: 20)
+            trackNameLabel.frame = CGRect(x: 10, y: contentView.top + 5 , width: contentView.width - 200, height: 20)
+            artistNameLabel.frame = CGRect(x: 10, y: contentView.bottom - 15 , width: contentView.width - 10, height: 10)
         }
  
     }

@@ -67,7 +67,7 @@ class NewReleasesCollectionViewCell: UICollectionViewCell {
      func config(_ model : Album){
          albumImageView.sd_setImage(with: URL(string: model.images?[0].url ?? ""), completed: nil)
         albumNameLabel.text = model.name
-        numberOfTracksLabel.text = "Tracks: \(model.total_tracks)"
+        numberOfTracksLabel.text = "Tracks: \(model.total_tracks ?? 0)"
          artistNameLabel.text = model.artists?[0].name
         
     }

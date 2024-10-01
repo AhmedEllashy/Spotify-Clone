@@ -45,6 +45,38 @@ class HomeViewController: UIViewController ,HomeViewModelDelegate {
         )
         HomeViewmModel.shared.delegate = self
         fetchData()
+        configLongGesture()
+    }
+    private func configLongGesture(){
+        let gesture = UILongPressGestureRecognizer(target: self, action: #selector(didTapLongGesture(_:)))
+        mainCollectionView.addGestureRecognizer(gesture)
+        
+    }
+    @objc private func didTapLongGesture (_ gesture : UILongPressGestureRecognizer){
+        print("sTATT")
+        guard gesture.state == .began else{
+            return
+        }
+        let touchPoint = gesture.location(in: mainCollectionView)
+        guard let index = mainCollectionView.indexPathForItem(at: touchPoint), index.section == 2 else{
+            return
+        }
+        let track = HomeViewmModel.shared.tracks[index.row]
+        let actionSheet = UIAlertController(title: track.name, message: "Are you want add this to a playlist?", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Add", style: .default, handler: { action in
+            let vc = LibraryPlaylistViewController()
+            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(self.didTapCancel))
+            vc.selectionHandler = { playlist in
+                LibraryViewModel.shared.addTrackToPlaylist(playlist: playlist, track: track, vc: self)
+            }
+            self.present(UINavigationController(rootViewController: vc),animated: true)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(actionSheet,animated: true)
+        
+    }
+    @objc private func didTapCancel(){
+        self.dismiss(animated: true)
     }
     private func configureCollectionView(){
         view.addSubview(mainCollectionView)

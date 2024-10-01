@@ -144,7 +144,7 @@ extension SearchResultsViewController : UICollectionViewDelegate , UICollectionV
             return cell
         case .playlist(let model) :
             let playlist = model[indexPath.row]
-            let searchItemModel = SearchItemModel(imageURL: playlist.images.first?.url ?? "", title: playlist.name )
+            let searchItemModel = SearchItemModel(imageURL: playlist.images?.first?.url ?? "", title: playlist.name )
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCollectionViewCell.identifier, for: indexPath) as! SearchCollectionViewCell
             cell.config(with: searchItemModel)
             return cell
@@ -188,7 +188,7 @@ extension SearchResultsViewController : SearchViewModelDelegate{
     }
     
     func errorOccured(with error: String) {
-        Utilities.errorALert(title: "Ooops", message: error, actionTitle: nil, action: {}, vc: self)
+        Utilities.errorALert(message: error, actionTitle: nil, action: {}, vc: self)
     }
     
 }

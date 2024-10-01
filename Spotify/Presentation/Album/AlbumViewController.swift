@@ -40,12 +40,13 @@ class AlbumViewController: UIViewController {
         collectionView.frame = view.bounds
     }
     
-//MARK: - Functions
+    //MARK: - Functions
     private func setup(){
         self.title = album.name
         viewModel.getAlbum(id: album.id ?? "")
         viewModel.delegate = self
         configCollectionView()
+        addRightBarButton()
     }
     private func configCollectionView(){
         view.addSubview(collectionView)
@@ -55,6 +56,17 @@ class AlbumViewController: UIViewController {
         collectionView.dataSource = self
         
         
+    }
+    private func addRightBarButton(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(didTapSaveAlbum))
+    }
+    @objc private func didTapSaveAlbum(){
+        let actionSheet = UIAlertController(title: "are you want to save this?", message: "", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Save", style: .default, handler: { action in
+            LibraryViewModel.shared.createUserAlbum(with: self.album, vc: self)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        self.present(actionSheet, animated: true)
     }
     private static func createSectionLayout(index : Int) -> NSCollectionLayoutSection {
         let section = index
@@ -83,7 +95,7 @@ class AlbumViewController: UIViewController {
                     heightDimension: .fractionalHeight(1.0)
                 )
             )
-            item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 5, bottom: 2, trailing: 5)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 5, bottom: 2, trailing: 5)
             let group = NSCollectionLayoutGroup.vertical(
                 layoutSize: NSCollectionLayoutSize(
                     widthDimension: .fractionalWidth(1.0),
@@ -153,7 +165,6 @@ extension AlbumViewController : UICollectionViewDelegate , UICollectionViewDataS
                 return
             }
             PlayerViewModel.shared.playTrack(track: track, vc: self)
-            
         }
     }
     
@@ -162,7 +173,7 @@ extension AlbumViewController : UICollectionViewDelegate , UICollectionViewDataS
 //MARK: - View Model Delegate Methods
 extension AlbumViewController : AlbumDetailsViewDelegate {
     func errorOccured(for error: String) {
-        Utilities.errorALert(title: "Oops", message: error, actionTitle: nil, action: {}, vc: self)
+        Utilities.errorALert( message: error, actionTitle: nil, action: {}, vc: self)
         print(error)
     }
     

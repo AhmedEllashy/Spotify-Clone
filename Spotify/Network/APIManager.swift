@@ -133,7 +133,9 @@ class APIManager{
             completion(.failure(ApiErrors.faildParseURL))
             return
         }
-        createRequest(url: url, type: .GET) { request in
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            
+            self?.createRequest(url: url, type: .GET) { request in
             let task = URLSession.shared.dataTask(with: request) { data, _, error in
                 guard let data = data , error == nil else {
                     completion(.failure(error!))
@@ -149,6 +151,8 @@ class APIManager{
             }
             task.resume()
         }
+    }
+
     }
     public func getCategoryPlaylist(id : String ,completion : @escaping (Result<FeaturedPlaylistResponse,Error>) -> Void){
         guard let url = URL(string: AppConstants.baseURL + "/browse/categories/\(id)/playlists") else{
@@ -270,10 +274,188 @@ class APIManager{
             task.resume()
         }
     }
+    public func getUserPlaylists(completion : @escaping (Result<PlaylistsResponse,Error>) -> Void){
+        getUserProfile { result in
+            switch result {
+            case .failure(let error) :
+                completion(.failure(error))
+            case .success(let user) :
+                guard let url = URL(string: AppConstants.baseURL + "/users/\(user.id ?? "")/playlists") else{
+                    completion(.failure(ApiErrors.faildParseURL))
+                    return
+                }
+                self.createRequest(url: url, type: .GET) { request in
+                    let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                        guard let data = data , error == nil else {
+                            completion(.failure(ApiErrors.somethingWentWrong))
+                            return
+                        }
+                        do {
+                            let result = try JSONDecoder().decode(PlaylistsResponse.self, from: data)
+                            print(result)
+                            completion(.success(result))
+                        }catch{
+                            print(error.localizedDescription)
+                            completion(.failure(error))
+                        }
+                    }
+                    task.resume()
+                }
+
+            }
+        }
+    }
+    public func createPlaylist(name : String, completion: @escaping (Result<Bool,Error>) -> Void){
+        getUserProfile { result in
+            switch result {
+            case .failure(let error) :
+                completion(.failure(error))
+            case .success(let user) :
+                guard let url = URL(string: AppConstants.baseURL + "/users/\(String(describing: user.id ?? ""))/playlists") else{
+                    completion(.failure(ApiErrors.faildParseURL))
+                    return
+                }
+                self.createRequest(url: url, type: .POST) { req in
+                    var request = req
+                    let json = [
+                        "name" : name
+                    ]
+                    request.httpBody = try? JSONSerialization.data(withJSONObject: json)
+                    let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                        guard let data = data , error == nil else{
+                            completion(.failure(ApiErrors.somethingWentWrong))
+                            return
+                        }
+                        do {
+                            let json = try JSONSerialization.jsonObject(with: data)
+                            completion(.success(true))
+                        }catch{
+                            completion(.failure(error))
+                        }
+                    }
+                    task.resume()
+                }
+            }
+        }
+    }
+    public func addTrackToPlaylist(playlist : Playlist,track : Track, completion : @escaping (Result<Bool,Error>)->Void){
+        guard let url = URL(string: AppConstants.baseURL + "/playlists/\(playlist.id)/tracks") else{
+            completion(.failure(ApiErrors.faildParseURL))
+            return
+        }
+        createRequest(url: url, type: .POST) { req in
+            var request = req
+            let json  = [
+                "uris": [
+                    "spotify:track:\(track.id)"
+                 ],
+            ]
+            request.httpBody = try? JSONSerialization.data(withJSONObject: json)
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            let task = URLSession.shared.dataTask(with: request) { data, res, error in
+                guard let data = data , error == nil else{
+                    completion(.failure(ApiErrors.somethingWentWrong))
+                    return
+                }
+                do {
+                    let result = try JSONSerialization.jsonObject(with: data)
+                    if let response = result as? [String : Any], response["snapshot_id"] as? String != nil {
+                        completion(.success(true))
+                    }
+                }catch{
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
+    public func deleteTrackFromPlaylist(playlist : Playlist,track : Track, completion : @escaping (Result<Bool,Error>)->Void){
+        guard let url = URL(string: AppConstants.baseURL + "/playlists/\(playlist.id)/tracks") else{
+            completion(.failure(ApiErrors.faildParseURL))
+            return
+        }
+        createRequest(url: url, type: .DELETE) { req in
+            var request = req
+            let json  = [
+                "tracks" : [
+                   [
+                    "uri":
+                        "spotify:track:\(track.id)"
+                   ]
+                     
+                ]
+            ]
+            request.httpBody = try? JSONSerialization.data(withJSONObject: json)
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            let task = URLSession.shared.dataTask(with: request) { data, res, error in
+                guard let data = data , error == nil else{
+                    completion(.failure(ApiErrors.somethingWentWrong))
+                    return
+                }
+                do {
+                    let result = try JSONSerialization.jsonObject(with: data)
+                    if let response = result as? [String : Any], response["snapshot_id"] as? String != nil {
+                        completion(.success(true))
+                    }
+                }catch{
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
+    func createUserAlbum(album : Album, completion: @escaping (Result<Bool,Error>) -> Void){
+        guard let url = URL(string: AppConstants.baseURL + "/me/albums") else{
+            completion(.failure(ApiErrors.faildParseURL))
+            return
+        }
+        createRequest(url: url, type: .PUT) { req in
+            var request = req
+            let body = [
+                "ids": [
+                    album.id
+                 ]
+            ]
+            request.httpBody = try? JSONSerialization.data(withJSONObject: body)
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            do {
+                let task = URLSession.shared.dataTask(with: request) { data, res, error in
+                    guard let res = res as? HTTPURLResponse , error == nil else{
+                        completion(.failure(ApiErrors.somethingWentWrong))
+                        return
+                    }
+                    print(res.statusCode)
+                    completion(.success(res.statusCode == 200))
+                }
+                task.resume()
+            }
+        }
+    }
     
-    
-    
-    
+    public func getUserAlbums(completion : @escaping (Result<UserAlbumResponse,Error>) -> Void){
+        guard let url = URL(string: AppConstants.baseURL + "/me/albums") else{
+            completion(.failure(ApiErrors.faildParseURL))
+            return
+        }
+        createRequest(url: url, type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request) { data,_, error in
+                guard let data = data , error == nil else{
+                    completion(.failure(ApiErrors.somethingWentWrong))
+                    return
+                }
+                do {
+                    let result = try JSONDecoder().decode(UserAlbumResponse.self, from: data)
+                    print(result)
+                    completion(.success(result))
+                }catch{
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
     
     //MARK: - Private APIS
     private func createRequest(url : URL?,type : HttpMethods ,completion : @escaping (URLRequest)-> Void){

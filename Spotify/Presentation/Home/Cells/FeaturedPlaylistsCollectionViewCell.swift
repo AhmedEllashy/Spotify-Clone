@@ -52,7 +52,7 @@ class FeaturedPlaylistsCollectionViewCell: UICollectionViewCell {
     }
     //MARK: - Fuctions
     func config(_ model : Playlist){
-        playlistImageView.sd_setImage(with: URL(string: model.images[0].url), completed: nil)
+        playlistImageView.sd_setImage(with: URL(string: model.images?[0].url ?? ""), completed: nil)
         playlistNameLabel.text = model.name
         creatorNameLabel.text = model.owner.display_name
     }

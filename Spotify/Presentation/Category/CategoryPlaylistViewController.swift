@@ -88,6 +88,6 @@ extension CategoryPlaylistViewController : CategoryViewModelDelegate {
         self.collectionView.reloadData()
     }
     func errorOccured(with error: String) {
-        Utilities.errorALert(title: "Ooops", message: error, actionTitle: nil, action: {}, vc: self)
+        Utilities.errorALert(message: error, actionTitle: nil, action: {}, vc: self)
     }
 }

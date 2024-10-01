@@ -11,4 +11,6 @@ import Foundation
 enum HttpMethods : String {
     case POST
     case GET
+    case DELETE
+    case PUT
 }

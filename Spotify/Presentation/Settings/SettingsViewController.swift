@@ -54,10 +54,21 @@ class SettingsViewController: UIViewController {
                 print("Downloads Tapped")
             }),
             Row(title: "Sign Out", handler: {
-                print("Sign Out Tapped")
+                let actionSheet = UIAlertController(title: "Sign Out!", message: "Are you sure?", preferredStyle: .actionSheet)
+                actionSheet.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
+                    AuthManager.shared.signOut()
+                    let navVC = UINavigationController(rootViewController: WelcomeViewController())
+                    navVC.navigationBar.prefersLargeTitles = false
+                    navVC.modalPresentationStyle = .fullScreen
+                    self.present(navVC,animated: true) {
+                        self.navigationController?.popToRootViewController(animated: true)
+                    }
+                }))
+                actionSheet.addAction(UIAlertAction(title: "No", style: .cancel))
+                self.present(actionSheet,animated: true)
             })
         ]))
-    print(sections)
+//    print(sections)
     }
 }
 //MARK: - Table View Delegate Methods
@@ -65,7 +76,7 @@ extension SettingsViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedRow = sections[indexPath.section].row[indexPath.row]
         selectedRow.handler()
-        tableView.deselectRow(at: indexPath, animated: true)
+//        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 //MARK: - Table View DataSource Methods
@@ -87,6 +98,7 @@ extension SettingsViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sections[section].title
     }
+    
     
 }
 

@@ -36,7 +36,6 @@ class PlayerViewModel : PlayerViewModelProtocol {
     }
     
     func playTrack(track: Track, vc: UIViewController) {
-        
         let playerVC = PlayerViewController()
         playerVC.dataSource = self
         playerVC.delegate = self

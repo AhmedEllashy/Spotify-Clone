@@ -13,6 +13,7 @@ struct RecommendationsResponse : Codable{
 }
 
 struct Track : Codable {
+    let id : String
     let album : Album?
     let artists : [Artist]
     let availableMarkets : [String]
@@ -23,7 +24,7 @@ struct Track : Codable {
 //    let images : [ImageResponse]?
     
     enum CodingKeys : String , CodingKey {
-        case album , artists
+        case album , artists, id
         case availableMarkets = "available_markets"
         case discNumber  = "disc_number"
         case durationMs = "duration_ms"
