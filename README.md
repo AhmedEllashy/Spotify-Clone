@@ -20,7 +20,10 @@ A fully functional Spotify clone built using **Swift** and **MVVM architecture**
 
 ## Screenshots 📸
 
-_Include screenshots of the app's interface (Home Screen, Play Screen, etc.) here._
+![Alt text](https://drive.google.com/file/d/1q8jp-13ymr6wBCUm15iAYvuJMS9DPkXw/view?usp=sharing)
+![Alt text](https://drive.google.com/file/d/1D-Kxcq-2_yg1Epi-b5cIi6xd13SaqqId/view?usp=sharing)
+![Alt text](https://drive.google.com/file/d/1GYcPqIWPmHZMeYiiaYowze6UjHug6I3I/view?usp=sharing)
+
 
 ## Installation 📦
 
